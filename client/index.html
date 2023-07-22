@@ -7,5 +7,16 @@
 </head>
 <body>
     <h1>Book Management System</h1>
+
+        <form onsubmit="event.preventDefault(); addBook();">
+        <label for="id">Book ID:</label><br>
+        <input type="text" id="id" name="id"><br>
+        <label for="title">Book Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author"><br>
+        <input type="submit" value="Add Book">
+    </form>
+    
 </body>
 </html>
