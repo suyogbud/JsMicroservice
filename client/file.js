@@ -22,3 +22,20 @@ async function addBook() {
         document.getElementById('message').textContent = 'Error occurred while adding the book.';
     }
 }
+async function loadBooks() {
+    const response = await fetch('http://localhost:3001/books');
+    const books = await response.json();
+
+    const booksContainer = document.getElementById('books');
+    booksContainer.innerHTML = '';
+
+    books.forEach(book => {
+        const bookItem = document.createElement('div');
+        bookItem.textContent = `ID: ${book.id}, Title: ${book.title}, Author: ${book.author}`;
+        booksContainer.appendChild(bookItem);
+    });
+}
+
+window.onload = function () {
+    loadBooks();
+};
