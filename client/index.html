@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Management System</title>
 </head>
+
 <body>
     <h1>Book Management System</h1>
 
-        <form onsubmit="event.preventDefault(); addBook();">
+    <form onsubmit="event.preventDefault(); addBook();">
         <label for="id">Book ID:</label><br>
         <input type="text" id="id" name="id"><br>
         <label for="title">Book Title:</label><br>
@@ -18,5 +20,10 @@
         <input type="submit" value="Add Book">
     </form>
     
+    <p id="message"></p>
+
+    <h2>All Books</h2>
+    <div id="books"></div>
 </body>
+
 </html>
