@@ -33,3 +33,15 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #45a049;
 }
+
+#message {
+  color: green;
+  text-align: center;
+}
+
+#books div {
+  background-color: #f2f2f2;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
